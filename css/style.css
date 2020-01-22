@@ -258,6 +258,12 @@
 
 /*end of @fontface*/
 
+
+/* */
+/* @-ms-viewport{
+  width: device-width;
+} */
+
 body {
   background: purple;
   font-family: "Raleway-Light";
@@ -334,7 +340,7 @@ h6 {
 
 .socialcontainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 
   /* height: 100px; */
   background-color: teal;
