@@ -5,9 +5,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylemobile.css" />
+    <script
+      src="https://kit.fontawesome.com/aea37e86d3.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Document</title>
   </head>
-  <body>
+
+  <body class="container">
     <header>
       <nav>
         <div>
@@ -17,7 +25,7 @@
         <ul>
           <li>ABOUT</li>
           <li>SHOP</li>
-          <li>FEATURES</li>
+          <li>FEATURED</li>
           <li>UPDATES</li>
         </ul>
         <div>
@@ -29,21 +37,22 @@
 
     <!-- main site content goes here-->
     <main>
-      <section>
+      <section class="hero-banner">
         <!-- hero section-->
-        <p>New COLLECTION</p>
-        <h2>Winter 2020</h2>
+        <p>NEW COLLECTION</p>
+        <h2 id="season">Winter 2020</h2>
       </section>
       <h2><em>Hand-Crafted </em><strong>Styles</strong></h2>
 
-      <section>
+      <section class="about">
         <!-- about-->
         <p>
-          Aloha Apparel CO. sells only the finest ready-to-travel clothing.
-          Browse our current selection of products or sign-up for updates below
+          Aloha Apparel Co. sells only the finest ready-to-travel clothing.
+          Browse our current selection of products or sign-up for updates below.
         </p>
       </section>
-      <section>
+
+      <section class="category-grid">
         <!-- shop grid-->
         <div>
           <span>MEN'S</span>
@@ -64,47 +73,132 @@
           <span>WOMEN'S</span>
         </div>
       </section>
-      <section>
-        <!--featured-->
+      <section class="featured">
+        <!--features-->
         <h2><em>Most-Loved</em><strong> Products</strong></h2>
+
         <figure>
-          <img src="images/stretch-knit-dress.jpg" />
+          <img
+            src="images/stretch-knit-dress.jpg"
+            alt="Black Dress With White Polka Dots"
+          />
           <p>DRESSES</p>
           <h3>Stretch Knit Dress</h3>
           <p>$169.00</p>
           <button>Add to Cart</button>
         </figure>
+
         <figure>
-          <img src="images/cotton-blue-shirt.jpg" />
+          <img
+            src="images/cotton-blue-shirt.jpg"
+            alt="Blue Denim Cotton Shirt"
+          />
           <p>SHIRTS</p>
           <h3>Cotton Blue Shirt</h3>
           <p>$89.00</p>
           <button>Add to Cart</button>
         </figure>
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
+
+        <figure>
+          <img
+            src="images/checked-stretch-dress.jpg"
+            alt="Red Dress With White Polka Dots"
+          />
+          <p>DRESSES</p>
+          <h3>Checked Stretch Dress</h3>
+          <p>$129.00</p>
+          <button>Add to Cart</button>
+        </figure>
+        <figure>
+          <img
+            src="images/blue-hipster-backpack.jpg"
+            alt="Blue Bag With Faded Red Leather Straps"
+          />
+          <p>BAGS</p>
+          <h3>Blue Hipster Backpack</h3>
+          <p>$69.00</p>
+          <button>Add to Cart</button>
+        </figure>
+        <figure>
+          <img
+            src="images/blue-silk-dress.jpg"
+            alt="Blue Silk Dress, Includes Belt"
+          />
+          <p>DRESSES</p>
+          <h3>Blue Silk Dress</h3>
+          <p>$89.00</p>
+          <button>Add to Cart</button>
+        </figure>
+        <figure>
+          <img
+            src="images/cotton-yellow-tshirt.jpg"
+            alt="Plain Yellow Cotton Shirt"
+          />
+          <p>SHIRTS</p>
+          <h3>Yellow Cotton T-Shirt</h3>
+          <p>$89.00</p>
+          <button>Add to Cart</button>
+        </figure>
+        <figure>
+          <img
+            src="images/demin-overall-shorts.jpg"
+            alt="Denim Overall Shorts"
+          />
+          <p>PANTS</p>
+          <h3>Denim Overall Shorts</h3>
+          <p>$89.00</p>
+          <button>Add to Cart</button>
+        </figure>
+        <figure>
+          <img
+            src="images/pink-dotted-dress.jpg"
+            alt="Pink Dress with Black Polka Dots"
+          />
+          <p>DRESSES</p>
+          <h3>Pink Dotted Dress</h3>
+          <p>$89.00</p>
+          <button>Add to Cart</button>
+        </figure>
       </section>
-      <section>
+      <section class="subscribe">
         <!--updates-->
         <h2><em>Sign-up for</em><strong> Updates</strong><strong></strong></h2>
-        <p>Stay updated on our latest product releases, be first to</p>
+        <p>
+          Stay updated on our latest product releases, be first to find out
+          about upcoming sales, and get free style tips from our blog.
+          Unsubscribe at any time.
+        </p>
         <form>
           <input type="email" placeholder="Your Email." />
           <input type="submit" value="Subscribe" />
         </form>
       </section>
     </main>
-    <footer>
-      <div>
-        <p>&copy 2020 Aloha Apparel <br />Powered using HTML and CSS</p>
-        <p>555-555-5555</p>
-        <p>Put the address in here...</p>
+    <footer class="footercontainer">
+      <div class="addresscontainer">
+        <p>&copy 2020 Aloha Apparel <br />Powered by HTML and CSS.</p>
+        <p>
+          604-604-6040.<a href="mailto:info@alohaapparel.com"
+            >info@alohaapparel.com</a
+          >
+        </p>
+        <p>
+          1490 W Broadway<br />
+          Vancouver, BC, Canada
+        </p>
       </div>
-      <div></div>
+      <div class="socialcontainer">
+        <ul>
+          <li><i class="fab fa-facebook-f"></i> Facebook</li>
+          <li><i class="fab fa-twitter-square"></i> Twitter</li>
+          <li><i class="fab fa-instagram"></i> Instagram</li>
+          <li><i class="fab fa-pinterest"></i> Pinterest</li>
+        </ul>
+      </div>
     </footer>
+
+    <script src="main.js">
+      console.log("Hello, world!");
+    </script>
   </body>
 </html>
