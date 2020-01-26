@@ -263,11 +263,12 @@
 
 .container {
   background: white;
+  margin:auto;
   font-family: "Raleway-Light";
   /* Default size of font is 14px. 16px for larger devices
      which is going to be set in a mediaquery*/
   font-size: 14px;
-  color: white;
+  color:#2d2d2d; /*body font color*/
   display: flex;
   flex-direction: column;
 }
@@ -288,19 +289,13 @@ h6 {
   object-fit:cover;
 } */
 
-header {
-  /* height: 3.93%; */
-}
-
-main {
-  /* height: 96.07%; */
-}
 
 nav {
   /*no flex-direction as row is already the default*/
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  color:#e2574c;
   /* max-width: 100%; */
   /* height: 3.93%; */
 }
@@ -312,7 +307,8 @@ nav ul {
   height: 3rem;
   justify-content: space-evenly;
   align-items: center;
-  order: 10;
+  order: 10;  /*set order to a large number to ensure it appears
+                last within the flex box*/
   background-color: white;
 
   /*come back to this later, code for the solid line above nav
@@ -373,7 +369,11 @@ div img {
   color: white;
   justify-content: center;
 }
-
+.category{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
 .category:first-child {
   /* Men's div */
   height: 32.2vw;
@@ -431,6 +431,16 @@ div img {
 .featured {
   /* height: 23.14%; */
   text-align: center;
+  line-height:2em;
+  color:#969696;
+  height:500px;
+}
+
+.featured h2{
+  color:black;
+}
+.featured h3{
+  color:#e2574c;
 }
 
 .subscribe {
@@ -447,48 +457,32 @@ div img {
   margin-bottom: 5px; /*small divide between subscribe and footer*/
 }
 
-.footercontainer {
-  background: black;
-  height: 67vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.addresscontainer {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.socialcontainer ul {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-/* .socialcontainer ul li i{
-  display:none;
-} */
 .form-container {
-  position: relative;
+  position: relative; /*so its child 'submit-button' may use the form
+                        form's position as reference when setting 
+                        properties(ie. top, right, etc.)*/
 }
 
 .submit-button {
-  background-color: red;
+  height: 6.4vw;
+  width: 25.8vw;
+  background-color:#e2574c;
   position: absolute;
   z-index: 3;
+  
+  /*for calculations for 'top' and 'right' refer to appendix A*/
   top: calc(
     (100% - 6.4vw) / 2
-  ); /* (100% of form height - height of button / 2)*/
-  right: 7.09%;
-
-  /*calc((100vw - 87.1vw) / 2);*/
+  );
+  bottom: calc(
+    (100% - 6.4vw) / 2
+  );
+  right: 7vw;
   border: none;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  height: 6.4vw;
-  width: 25.8vw;
+
   border-radius: 25px;
   font-weight: 300;
   padding: 16px 40px;
@@ -507,3 +501,47 @@ div img {
   font-weight: 900;
   padding: 16px 40px;
 }
+
+.footercontainer {
+  background:#242424;
+  color:white;
+  height: 67vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
+}
+
+.addresscontainer {
+  height:50%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:space-around;
+}
+
+.addresscontainer p{
+  line-height:2em;
+  text-align:center;
+
+}
+
+.socialcontainer{
+  display:flex;
+  width:50%;
+  justify-content:center;
+}
+.socialcontainer ul {
+  display: flex;
+  width:100%;
+  justify-content: space-evenly;
+}
+
+.socialcontainer span{
+  display:none;
+}
+
+/* .socialcontainer ul li i{
+  display:none;
+} */
+
