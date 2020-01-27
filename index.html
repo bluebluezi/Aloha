@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/stylemobile.css" />
     <link rel="stylesheet" type="text/css" href="flickity.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script
       src="https://kit.fontawesome.com/aea37e86d3.js"
       crossorigin="anonymous"
@@ -20,21 +20,27 @@
       <nav>
         <div class="brand-icon-wrapper"></div>
         <ul>
-          <li>ABOUT</li>
-          <li>SHOP</li>
-          <li>FEATURED</li>
-          <li>UPDATES</li>
+          <li>
+            ABOUT
+          </li>
+          <li>
+            SHOP
+          </li>
+          <li>
+            FEATURED
+          <li>
+            UPDATES
+          </li>
         </ul>
         <div class="cart-icon-wrapper"></div>
       </nav>
     </header>
 
-    <!-- main site content goes here-->
     <main>
       <section class="hero-banner">
         <!-- hero section-->
         <p>NEW COLLECTION</p>
-        <h2>Winter<br />2020</h2>
+        <h2>Winter 2020</h2>
       </section>
 
       <section class="about">
@@ -48,22 +54,22 @@
 
       <section class="category-grid">
         <!-- shop grid-->
-        <div class="category">
+        <div class="category full-width-grid">
           <span>MEN'S</span>
         </div>
-        <div class="category">
+        <div class="category half-width-grid">
           <span>TRENDS</span>
         </div>
-        <div class="category">
+        <div class="category half-width-grid">
           <span>GLASSES</span>
         </div>
-        <div class="category">
+        <div class="category half-width-grid">
           <span>SALE</span>
         </div>
-        <div class="category">
+        <div class="category half-width-grid">
           <span>BAGS</span>
         </div>
-        <div class="category">
+        <div class="category full-width-grid">
           <span>WOMEN'S</span>
         </div>
       </section>
@@ -79,7 +85,7 @@
             <p>DRESSES</p>
             <h3>Stretch Knit Dress</h3>
             <p>$169.00</p>
-            <button>Add to Cart</button>
+            <button class="buy-button">Add to Cart</button>
           </div>
 
           <div class="carousel-cell">
@@ -90,7 +96,7 @@
             <p>SHIRTS</p>
             <h3>Cotton Blue Shirt</h3>
             <p>$89.00</p>
-            <button>Add to Cart</button>
+            <button class="buy-button">Add to Cart</button>
           </div>
 
           <div class="carousel-cell">
@@ -101,7 +107,7 @@
             <p>DRESSES</p>
             <h3>Checked Stretch Dress</h3>
             <p>$129.00</p>
-            <button>Add to Cart</button>
+            <button class="buy-button">Add to Cart</button>
           </div>
           <div class="carousel-cell">
             <img
@@ -111,7 +117,7 @@
             <p>BAGS</p>
             <h3>Blue Hipster Backpack</h3>
             <p>$69.00</p>
-            <button>Add to Cart</button>
+            <button class="buy-button">Add to Cart</button>
           </div>
           <div class="carousel-cell">
             <img
@@ -121,7 +127,7 @@
             <p>DRESSES</p>
             <h3>Blue Silk Dress</h3>
             <p>$89.00</p>
-            <button>Add to Cart</button>
+            <button class="buy-button">Add to Cart</button>
           </div>
           <div class="carousel-cell">
             <img
@@ -131,7 +137,7 @@
             <p>SHIRTS</p>
             <h3>Yellow Cotton T-Shirt</h3>
             <p>$89.00</p>
-            <button>Add to Cart</button>
+            <button class="buy-button">Add to Cart</button>
           </div>
           <div class="carousel-cell">
             <img
@@ -141,7 +147,7 @@
             <p>PANTS</p>
             <h3>Denim Overall Shorts</h3>
             <p>$89.00</p>
-            <button>Add to Cart</button>
+            <button class="buy-button">Add to Cart</button>
           </div>
           <div class="carousel-cell">
             <img
@@ -151,10 +157,11 @@
             <p>DRESSES</p>
             <h3>Pink Dotted Dress</h3>
             <p>$89.00</p>
-            <button>Add to Cart</button>
+            <button class="buy-button">Add to Cart</button>
           </div>
         </div>
       </section>
+      <hr>
       <section class="subscribe">
         <!--updates-->
         <h2><em>Sign-up for</em><strong> Updates</strong><strong></strong></h2>
@@ -163,22 +170,25 @@
           about upcoming sales, and get free style tips from our blog.
           Unsubscribe at any time.
         </p>
-        <form class="form-container">
+        
+        <form class="form-container" novalidate> <!--turns off default validation, validation  with javascript instead-->
           <input class="input-textbox" type="email" placeholder="Your Email." />
           <input class="submit-button" type="submit" value="Subscribe" />
         </form>
       </section>
+      <hr>
     </main>
     <footer class="footercontainer">
       <div class="addresscontainer">
-        <p>&copy 2020 Aloha Apparel <br />Powered by HTML and CSS.</p>
+        <p>&copy 2020 Aloha Apparel Co.<br />Powered by HTML and CSS.</p>
         <p>
           604-604-6040.<a href="mailto:info@alohaapparel.com"
             >info@alohaapparel.com</a
           >
         </p>
-        <p>
-          1490 W Broadway<br />
+        <p id="font-dark-grey">
+          1490 W Broadway
+          <br />
           Vancouver, BC, Canada
         </p>
       </div>
