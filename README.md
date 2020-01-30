@@ -31,7 +31,7 @@ Side note, ::after creates a pseudo element that is generated AFTER the element 
 * Stack Overflow Community
 * [PurpleBooth](https://github.com/purplebooth) for her easy to understand ReadMe template
 
-##Future iteration proposal
+## Future iteration proposal
 	- modify existed sizing units to prioritize em, rem, and %.
 	- animated logo.
 	- add highlighting effects for when hovering over shop grid and feature sections
